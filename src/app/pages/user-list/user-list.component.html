@@ -1,0 +1,34 @@
+<p>List of Registered Users</p>
+<label for="Users">There are: {{users.length}} users</label>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>User Name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let user of users">
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.userName}}</td>
+        </tr>
+    </tbody>
+</table>
+<!-- <ul>
+<li *ngFor="let name of users">{{name}}</li>
+</ul> -->
+
+<!-- <input type="text" [(ngModel)]="todo">
+<button (click)="saveToDo()">Register To-Do</button>
+<button (click)="resetArray()">Clear List</button>
+
+<div class="container" *ngFor="let userName of users">
+    <label>{{userName}}</label>
+</div> -->

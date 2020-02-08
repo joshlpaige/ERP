@@ -1,0 +1,252 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+
+}
+
+a:hover {
+    color: black;
+}
+
+.header {
+    background: url(img/nav_03.jpg);
+    
+    background-position: right center;
+    background-size: cover;
+    padding-bottom: 1em;
+    width: 100vw;
+}
+
+.header2 {
+    background: url(img/funny.gif);
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    padding-bottom: 1em;
+    width: 100vw;
+}
+
+.header3 {
+    background: url(img/dancing.gif);
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    padding-bottom: 1em;
+    width: 100vw;
+}
+
+
+.header-image {
+    float: left;
+    width: 33%;
+    margin-top: 3em;
+    padding-right: 3em;
+    text-align: right;
+    
+}
+
+.header-image2 {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 140px;
+    height: 150px;
+}
+
+.header-image3 {
+    border: 1px solid black;
+    border-radius: 15%;
+    width: 250px;
+    height: 250px;
+}
+
+.header-info {
+    float: right;
+    width: 67%;
+    margin-top: 4em;
+    color: white;
+}
+
+.surtitle {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.title {
+    margin: .25em 0;
+    font-size: 3em;    
+}
+
+.subtitle {
+    margin: .5em 0 1.5em;
+    font-size: 1.25em;    
+}
+
+.intro {
+    margin: .5em 0 1.5em;
+    font-size: 3em; 
+}
+
+ul {
+    width: 300px;
+    font-size: 1.25em;
+    padding: 8px;
+    margin-top: 5px;
+    list-style-image: url(img/dog-paw.png);
+}
+
+.btn {
+    max-height: 2.5em;
+    border: none;
+    padding: .75em 1.25em;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(8, 8, 117);
+}
+
+.description {
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.25em;
+    background-color: white;
+}
+
+.facts {
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.25em;
+    background-color: tan;
+}
+
+.facts-text {
+    float: left;
+    width: 75%;
+}
+
+.fact {
+    margin-bottom: .75em;
+}
+
+.facts-image {
+    float: right;
+}
+
+.image {
+    border: 1px solid black;
+    border-radius: 30%;
+    width: 200px;
+    height: 210px;
+}
+
+.puppy-versions-title {
+    padding: 1em 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.puppy-versions {
+    padding: 1em 0;
+    background-color: tan;
+}
+
+.puppy-version {
+    float: left;
+    width: 33.33%;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: white;
+}
+
+.version-item {
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: .75em 0;
+    font-size: 1.25em;
+}
+
+.version-item:last-child {
+     border-bottom: 0;
+}
+
+.version-title {
+    padding: .75em 0;
+    font-size: 1.5em;
+}
+
+.version-price {
+    padding: .75em 0;
+    font-size: 2em;
+    background-color: lightgray;
+}
+
+.btn-plain {
+    font-weight: normal;
+    color: black;
+    background-color: lightgray;
+}
+
+.version-price-featured {
+    color: white;
+    background-color: brown;
+}
+
+.social {
+    padding: 1em 0;
+    font-size: 1.5em;
+    text-align: center;    
+}
+
+.social-links {
+    margin-top: .75em;
+}
+
+.social-link {
+    margin: 0 .25em;
+}
+
+.footer {
+    padding: 1em 0;
+    font-variant: small-caps;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.footer-links {
+    margin-bottom: .75em;
+    font-size: 1.5em;
+}
+
+.footer-link {
+    margin: 0 .5em;
+    text-decoration: none;
+    color: black;
+}
+
+
+.footer-link:hover {
+    color:purple;
+}
+
+.copyright {
+    font-style: italic;
+    font-size: 1em;
+}

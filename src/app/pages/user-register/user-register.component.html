@@ -1,0 +1,128 @@
+<!-- <body>
+  <main>
+    <div class="container">
+
+      <h1>Register New User</h1>
+
+      <div class="form">
+
+        <div class="row">
+          <div class="col-4">
+            <label>Email</label>
+          </div>
+          <div class="col-8">
+            <input type="email" class="form-control" [(ngModel)]="model.email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <label>User Name</label>
+          </div>
+          <div class="col-8">
+            <input type="text" class="form-control" [(ngModel)]="model.userName">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <label>Password</label>
+          </div>
+          <div class="col-8">
+            <input type="password" class="form-control" [(ngModel)]="model.password">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <label>Re-enter Password</label>
+          </div>
+          <div class="col-8">
+            <input type="password" class="form-control" [(ngModel)]="reTypePassword">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-4">
+            <label>First Name</label>
+          </div>
+          <div class="col-8">
+            <input type="text" class="form-control" [(ngModel)]="model.firstName">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <label>Last Name</label>
+          </div>
+          <div class="col-8">
+            <input type="text" class="form-control" [(ngModel)]="model.lastName">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-8">
+            <button class="btn btn-primary btn-sm" type="button" (click)="save()">Register User</button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div> -->
+
+
+    <div class="limiter">
+      <div class="container">
+        <div class="login100-more" style="background-image: url('img/');"></div>
+
+        <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+          <form class="login100-form validate-form">
+            <span class="login100-form-title p-b-59">
+              Sign Up
+            </span>
+
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+              <span class="label-input100">First Name</span>
+              <input class="input100" type="text" name="name" placeholder="First Name..." [(ngModel)]="model.firstName">
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+              <span class="label-input100">Last Name</span>
+              <input class="input100" type="text" name="name" placeholder="Last Name..." [(ngModel)]="model.lastName">
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+              <span class="label-input100">Email</span>
+              <input class="input100" type="text" name="email" placeholder="Email addess..." [(ngModel)]="model.email">
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Username is required">
+              <span class="label-input100">Username</span>
+              <input class="input100" type="text" name="username" placeholder="Username..."[(ngModel)]="model.userName">
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Password is required">
+              <span class="label-input100">Password</span>
+              <input class="input100" type="text" name="pass" placeholder="*************" [(ngModel)]="model.password">
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Repeat Password is required">
+              <span class="label-input100">Repeat Password</span>
+              <input class="input100" type="text" name="repeat-pass" placeholder="*************" [(ngModel)]="reTypePassword">
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <div class="wrap-login100-form-btn">
+                <div class="login100-form-bgbtn"></div>
+                <button class="login100-form-btn" (click)="save()">
+                  Register User!
+                </button>
+              </div>
