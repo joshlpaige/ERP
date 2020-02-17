@@ -109,20 +109,31 @@
 
             <div class="wrap-input100 validate-input" data-validate="Password is required">
               <span class="label-input100">Password</span>
-              <input class="input100" type="text" name="pass" placeholder="*************" [(ngModel)]="model.password">
+              <input class="input100" type="password" name="pass" placeholder="*************" [(ngModel)]="model.password">
               <span class="focus-input100"></span>
+              <div *ngIf="model.password && !isPasswordStrong()" class="alert alert-danger">
+                Your password is too weak. 
+              </div>
             </div>
 
             <div class="wrap-input100 validate-input" data-validate="Repeat Password is required">
               <span class="label-input100">Repeat Password</span>
-              <input class="input100" type="text" name="repeat-pass" placeholder="*************" [(ngModel)]="reTypePassword">
+              <div *ngIf="model.password != reTypePassword" class="alert alert-danger">
+                Passwords do not match!
+              </div>
+              <input class="input100" type="password" name="repeat-pass" placeholder="*************" [(ngModel)]="reTypePassword">
               <span class="focus-input100"></span>
             </div>
 
             <div class="container-login100-form-btn">
               <div class="wrap-login100-form-btn">
                 <div class="login100-form-bgbtn"></div>
-                <button class="login100-form-btn" (click)="save()">
+                <button class="login100-form-btn" (click)="save()" [disabled]="!isDataCorrect()">
                   Register User!
                 </button>
               </div>
+              <span *ngIf="savedAlertVisible" class="alert alert-success">
+                User Registered
+              </span>
+
+              

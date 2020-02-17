@@ -1,1 +1,35 @@
-<p>login works!</p>
+
+<div class="limiter">
+    <div class="container">
+      <div class="login100-more" style="background-image: url('http://www.whisperingpinespups.com/images/nav_03.jpg');"></div>
+
+      <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+        <form class="login100-form validate-form">
+          <span class="login100-form-title p-b-59">
+           Log In!
+          </span>
+
+          <div class="wrap-input100 validate-input" data-validate="Name is required">
+            <span class="label-input100">Username</span>
+            <input class="input100" type="text" name="name" placeholder="User Name..." [(ngModel)]="userName">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Name is required">
+            <span class="label-input100">Password</span>
+            <input class="input100" type="password" name="name" placeholder="Password..."[(ngModel)]="password">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button (click)="validateLogin()" class="login100-form-btn">
+                Login
+              </button>
+            </div>
+            <span *ngIf="loginSuccess" class="alert alert-success">You are logged in!</span>
+            <span *ngIf="loginError" class="alert alert-danger">Wrong User Name or Password</span>
+
+            <!-- display an error alert when login failed -->
+            <!-- display a success alert when login works -->
